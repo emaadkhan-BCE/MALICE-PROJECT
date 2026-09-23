@@ -1,0 +1,36 @@
+print("""""
+          
+          .%%%*....-%%%+  ..+%%%%%:..   .%%%%.         #%%%%%%%%%%: ...#%%%%%%+..-%%%%%%%%%%%%+
+           .%%%%%+:%%%%%+..-%%%*.#%%%... .%%%%.            -%%%+    ..#%%%-  *%%%--%%%#.
+           .%%%%%%%%%%%%+.%%%%.   :%%%#. .%%%%.            -%%%+    =%%%=         -%%%#:::::::
+           .%%%*.#%::%%%+.%%%%-:::-%%%#. .%%%%.            -%%%+    =%%%=         -%%%%%%%%%%#
+           .%%%*.#%::%%%+.%%%%%%%%%%%%#. .%%%%.            -%%%+    =%%%*+:  -+++:-%%%#.
+           .%%%*    :%%%+.%%%%.   :%%%#. .%%%%=======   ===+%%%#===. .*#%%+==#%##:-%%%#========-
+           .%%%*    :%%%+.%%%%.   :%%%#. .%%%%%%%%%%#   #%%%%%%%%%%:    #%%%%%%+  -%%%%%%%%%%%%+  
+           
+                                    
+                                    welcome to the murder mystery
+
+""""")
+
+enter = input("click in enter to start")
+if enter == (""
+             ""):
+   print(" ")
+   print(" ")
+   print(" ")
+   print ("so the story starts from an old town. in the town there we only 7 houses, 3 mansions and a police station.")
+   print ("one day a random stranger wander out of nowhere, he went famous in the town for his unmatchable skills")
+   print ("soon he was the beloved person in the town, everyone trusted him blindly. here comes a day where he seemed to be ")
+   print ("acting differently, he was rude towards other but people took it as a joke. He ordered the people to sleep ")
+   print ("early this friday and suprisingly people heard to him and slept. when the sun settled down in the misty fog the blood moon arised")
+   print ("here the guy manipulated the children in the town to go with to a scary, creepy & haunting location and slautered them into senses.")
+   print ("when the town people came to know about it they almost killed him, he tried to escape but got struck by an officers van.")
+   print ("he was took to a hospital and then the jail in ritualington. while he was in a van he killed the 2 officers sat near him in the van ")
+   print ("and fleed but the officer mark behind his van saw the incident and shot the psychopath twice in shoulder and in his leg. he managed ")
+   print ("to leap into a graveyard and successfully escape him but here are the real challenges for him awaiting")
+   print(" ")
+   print(" ")
+   print(" ")
+   print ("here it begins")
+   
