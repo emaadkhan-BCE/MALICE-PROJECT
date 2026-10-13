@@ -1,3 +1,45 @@
+import os
+
+# 1. Set up the map size and starting position of the cursor (@)
+WIDTH = 20
+HEIGHT = 10
+player_x = 17
+player_y = 5
+
+while True:
+    # 2. Clear the terminal screen so it looks like an animation
+    # 'nt' is for Windows, 'posix' is for Mac/Linux
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+    # 3. Draw the ASCII map
+    for y in range(HEIGHT):
+        row = ""
+        for x in range(WIDTH):
+            if x == player_x and y == player_y:
+                row += "@"  # Draw the player/cursor
+            else:
+                row += "."  # Draw the empty map space
+        print(row)
+
+    print("\nUse WASD to move (Press Enter after key). Type 'e' to interact.")
+
+    # 4. Get input from the user
+    move = input("Move: ").lower()
+
+    # 5. Update coordinates based on input
+    if move == 'w' and player_y > 0:
+        player_y -= 1  # Move Up
+    elif move == 's' and player_y < HEIGHT - 1:
+        player_y += 1  # Move Down
+    elif move == 'a' and player_x > 0:
+        player_x -= 1  # Move Left
+    elif move == 'd' and player_x < WIDTH - 1:
+        player_x += 1  # Move Right
+    elif move == 'e':
+        print("entering chat!:  ")
+        break  # Exit the loop
+
+
 print("""""
           
           .%%%*....-%%%+  ..+%%%%%:..   .%%%%.         #%%%%%%%%%%: ...#%%%%%%+..-%%%%%%%%%%%%+
