@@ -162,8 +162,16 @@ print(r"""
 """)
 print("NPC: Hello traveler...!!! What brings you to these land of dead..?")
 print()
-print("say the truth or lie")
-player_choice1 = int(input("click 1 to say the truth"))
-player_choice2 = int(input("click 2 to lie"))
+player_choice1 = 0
+
+while player_choice1 >=3 or player_choice1 <=0:
+    player_choice1 = int(input("click 1 to say the truth or 2 to lie: "))
+    if player_choice1 == 1:
+        print("just surviv..!! uuh nevermind, its a long story")
+    elif player_choice1 == 2:
+        print("ME...!! I am the gardener \nhere to cut the plants")
+    else:
+        print(" do you not understand??")
+
 
 
