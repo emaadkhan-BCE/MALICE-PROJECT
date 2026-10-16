@@ -1,50 +1,50 @@
-import time
-
-# 1. This is the magic machine that types out our words
-def read_line(sentence):
-    for word in sentence:
-        print(word, end="", flush=True)
-        time.sleep(0.01) # Speed of typing (lower number = faster)
-    print() # Moves to a new line when the sentence finishes
-
-# 2. This is the helper that lets the reader catch up
-
-def press_enter():
-    input("--- Press ENTER to read next line ---")
-    print()
-
-# --- YOUR STORY ---
-
-read_line("So the story starts from an old town.")
-read_line("In the town there we only 7 houses, 3 mansions and a police station.")
-press_enter()
-
-read_line("One day a random stranger wander out of nowhere.")
-read_line("He went famous in the town for his unmatchable skills.")
-read_line("soon he was the beloved person in the town, everyone trusted him blindly.")
-read_line(" here comes a day where he seemed to be acting differently")
-print()
-press_enter()
-read_line(" he was rude towards other but people took it as a joke.")
-read_line(" He ordered the people to sleep ")
-read_line("early this friday and suprisingly people heard to him and slept.")
-read_line("when the sun settled down in the misty fog the blood moon arised")
-print()
-press_enter()
-read_line("here the guy manipulated the children in the town to go with him to a scary, creepy & haunting location where he slautered them into senses.")
-read_line(" they were screaming, crying, begging for mercy as the psychopath ripped their skin off brutaly with a rusty half-broken knife.... ")
-print()
-press_enter()
-read_line("when the town people came to know about it they chased him to the sheriff station and nearly beat him to death")
-read_line(" but he was saved by the sheriff")
-read_line(" they brought him in the station and locked in.")
-read_line(" sheriff promised the town people to give them justice")
-read_line("Everybody left sealing their sadness and anger in their heart as the sheriff said 'trust me...'")
-print()
-read_line("The psychopath fled from the police van while being transferred to the cort, killing the 2 constables but fortunately could not escape sheriff's sight")
-read_line("Sheriff chased him all the way to the Graveyard but could not find him and had to leave out of disappointment")
-print()
-
+# import time
+#
+# # 1. This is the magic machine that types out our words
+# def read_line(sentence):
+#     for word in sentence:
+#         print(word, end="", flush=True)
+#         time.sleep(0.01) # Speed of typing (lower number = faster)
+#     print() # Moves to a new line when the sentence finishes
+#
+# # 2. This is the helper that lets the reader catch up
+#
+# def press_enter():
+#     input("--- Press ENTER to read next line ---")
+#     print()
+#
+# # --- YOUR STORY ---
+#
+# read_line("So the story starts from an old town.")
+# read_line("In the town there we only 7 houses, 3 mansions and a police station.")
+# press_enter()
+#
+# read_line("One day a random stranger wander out of nowhere.")
+# read_line("He went famous in the town for his unmatchable skills.")
+# read_line("soon he was the beloved person in the town, everyone trusted him blindly.")
+# read_line(" here comes a day where he seemed to be acting differently")
+# print()
+# press_enter()
+# read_line(" he was rude towards other but people took it as a joke.")
+# read_line(" He ordered the people to sleep ")
+# read_line("early this friday and suprisingly people heard to him and slept.")
+# read_line("when the sun settled down in the misty fog the blood moon arised")
+# print()
+# press_enter()
+# read_line("here the guy manipulated the children in the town to go with him to a scary, creepy & haunting location where he slautered them into senses.")
+# read_line(" they were screaming, crying, begging for mercy as the psychopath ripped their skin off brutaly with a rusty half-broken knife.... ")
+# print()
+# press_enter()
+# read_line("when the town people came to know about it they chased him to the sheriff station and nearly beat him to death")
+# read_line(" but he was saved by the sheriff")
+# read_line(" they brought him in the station and locked in.")
+# read_line(" sheriff promised the town people to give them justice")
+# read_line("Everybody left sealing their sadness and anger in their heart as the sheriff said 'trust me...'")
+# print()
+# read_line("The psychopath fled from the police van while being transferred to the cort, killing the 2 constables but fortunately could not escape sheriff's sight")
+# read_line("Sheriff chased him all the way to the Graveyard but could not find him and had to leave out of disappointment")
+# print()
+print("==================================================================================================================\n")
 print("""""
 
           .%%%*....-%%%+  ..+%%%%%:..   .%%%%.         #%%%%%%%%%%: ...#%%%%%%+..-%%%%%%%%%%%%+
@@ -61,6 +61,9 @@ print("""""
 """"")
 
 enter = input("click in enter to start")
+print()
+print("==================================================================================================================\n")
+print()
 import os
 
 # 1. Set up the map size and starting position of the cursor (@)
@@ -119,7 +122,7 @@ def circular_loading(duration_seconds=5):
         sys.stdout.flush()
 
         i += 1
-        time.sleep(0.15)  # Controls the speed of the spin
+        time.sleep(0.10)  # Controls the speed of the spin
 
     sys.stdout.write("\r" + " " * 35 + "\r")
     sys.stdout.flush()
@@ -134,8 +137,8 @@ print(r"""
                .-----.
              /         \          ~~
                                   ~~
-            |  (o) (o)  |        [  ]
-            \   __     /        / __\
+            |  (o) (o)  |        [  ]          Hello traveler...!!!
+            \   __     /        / __\          NPC: What brings you to these land of dead..?
             )=======/          (     )
              (=======/        / \___/
              |       |        //  //
@@ -159,8 +162,9 @@ print(r"""
               |   |   |
               |___|___|
               (___)(___)
+    =================================
 """)
-print("NPC: Hello traveler...!!! What brings you to these land of dead..?")
+print("")
 print()
 player_choice1 = 0
 
@@ -168,10 +172,99 @@ while player_choice1 >=3 or player_choice1 <=0:
     player_choice1 = int(input("click 1 to say the truth or 2 to lie: "))
     if player_choice1 == 1:
         print("just surviv..!! uuh nevermind, its a long story")
+        print()
+
     elif player_choice1 == 2:
         print("ME...!! I am the gardener \nhere to cut the plants")
+        print()
+
     else:
         print(" do you not understand??")
+
+import time
+
+# 1. This is the magic machine that types out our words
+def read_line(sentence):
+    for word in sentence:
+        print(word, end="", flush=True)
+        time.sleep(0.03) # Speed of typing (lower number = faster)
+    print() # Moves to a new line when the sentence finishes
+
+# 2. This is the helper that lets the reader catch up
+
+def press_enter():
+    input("--- Press ENTER to read next line ---")
+    print()
+
+
+read_line("NPC: I have certain items in exchange that knife.")
+read_line("What would you like to trade for?:")
+print()
+print("======================================================\n")
+while True:
+    decision = input("""NPC: I have a potion, a flask & a pendant, what would you like to have? 
+(type in the name of the item): """).lower()
+
+    print()  # Prints a blank line for spacing
+
+    if decision == "potion":
+        print("you won a heal potion, lets get out of here")
+        break  # Exits the loop because the choice was valid
+
+    elif decision == "pendant":
+        print("you won a luck pendant, lets get out of here")
+        break
+
+    elif decision == "flask":
+        print("you won a spirit flask, lets get out of here")
+        break
+
+    else:
+        # If they type anything else, this prints again
+        print("you HAVE TO PICK between the three!:\n")
+
+
+print("""⠀⠂⠐⠀⠒⠉⠁⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⠀⠀⢩⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                 ⢀⠀⠀⠀⠀⢰⠀⠀⡆⣀⠤⡦⠀⢣⠐⠉⡍⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀                 ⠀⠣⣄⣀⡴⣇⡠⠏⠳⠤⠃⢇⡄⠇⠀⠱⠤⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀ ⠀⠀⢠⠋⠉⠓⠒⠲⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⠒⠉⠉⠉⠉⠃⠒⠲⣄⡀⠀⠀⠀⠀⠀⠀⠀                          ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⢀⡀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⣶⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠁⢆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠛⠃⠸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⠁⠀⢸⠛⠓⡆⠀⣏⡉⡏⠁⠀⠀⠀⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⢲⠦⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⠀⠀⠀⠀⠀⠉⠓⠃⠀⠀⠈⠉⠁⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⢏⣭⣿⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡃⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡄⠀⠀⠈⢷⡦⣄⣀⣀⣀⣤⣞⡟⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣶⢩⠯⣫⣍⣽⣯⣁⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠓⡖⠒⠒⡖⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠳⣄⠀⠀⠉⠉⠛⠿⠿⠽⠋⣁⡀⣀⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⢮⣹⡀⠀⢿⠭⡿⣳⣯⣁⡾⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢳⠒⠒⠒⠒⠂⠂⠒⠋⠙⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠋⠁⣀⣀⡹⡟⣆⠈⡯⠿⢿⣿⡧⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡤⠏⠀⠀⠙⢆⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⣄⣀⣀⠀⡠⠤⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠔⠋⠀⠀⠀⡏⢁⢤⠀⣘⡾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⢹⠳⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⣟⢟⠤⠤⠤⠤⠎⠒⠦⡀⠀⠀⠀⠀⡀⠄⠊⠀⠀⢀⡤⠤⠔⠈⣠⡟⠚⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡇⠀⠀⠀⠀⠀⠀⢸⠀⠈⢧⠀⠀⠀⠀⠀⠀⢐⣗⢏⢃
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠃⠀⠁⠁⠉⠉⠁⠀⠀⠀⠀⠀⠁⠦⡎⠁⡀⠀⠀⡴⠉⠀⠈⢦⡴⠏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠎⠁⡇⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠙⡆⠀⠀⠀⠀⡁⡧⣏⠷
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⡠⠀⠀⠀⠈⠣⡈⠉⠁⠀⢀⡔⠊⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡠⠖⠉⠀⠀⣼⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠈⢇⠀⢐⠪⣽⠹⡏⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢎⠇⠀⡇⠀⠀⠀⠀⠀⡇⠀⠀⢹⠀⠀⠀⡀⢀⠗⡄⡠⠴⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⡤⠖⠉⠉⠁⠀⣀⡤⠚⠁⠸⡄⠀⠀⠀⠀⠀⠀⠀⡷⣄⠀⠀⠀⢂⡳⡇⡇⠦⢝⠆⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠏⡏⠀⠀⠙⠤⠬⠤⠔⠃⠀⠄⠖⠚⠓⠒⠚⠓⡄⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢆⡀⠀⠀⡠⠏⠁⠀⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠀⡇⠀⠧⡄⠀⠍⡇⠭⣿⡧⡑⠟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡸⠀⡇⠀⠀⠀⠀⠀⠀⣤⠊⣁⡤⠴⠶⠤⣄⣀⣀⣙⣄⠀⠈⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠓⠚⠁⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠙⣞⡇⠃⣷⡏⠄⣍⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠁⠀⡇⠀⠀⠀⠀⢰⡍⢠⡏⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠹⡄⠈⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⠃⠀⠀⠀⠀⠀⣄⠇⠀⠀⠀⠀⠀⣟⠯⡏⠗⡇⡍⡀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⢡⠀⠀⡇⠀⠀⠀⠀⣿⡎⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⠀⠀⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⣼⣝⠃⢇⣿⠅⠄
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡊⠇⠀⠀⡇⠀⠀⠀⠀⡅⡏⢆⠁⠀⠀⠀⠀⢰⣭⢭⣁⠀⠀⠀⡇⢧⠀⠀⢣⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⠀⠀⠀⠀⠀⠸⢽⠀⠀⠀⠀⠀⡗⠋⠀⢳⠙⡀⠂
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠸⡀⠀⠀⠀⢱⡇⠀⢧⠀⠀⠀⠀⠈⠢⠭⠚⠁⠀⡏⠣⣼⠀⠀⠈⡃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠁⠀⠀⢥⠄⠨⡂
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠙⡆⠀⠀⢣⠀⠀⠀⠀⠏⢆⠀⠱⡄⠀⠀⠀⠀⠀⠀⠀⣀⠇⠀⢸⠣⡀⠀⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠓⠒⡏⠉⠉⣇⠀⠀⠀⠀⠨⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⡁⠀⠀⠀⣷⠀⠀⠀⠈⡆⠉⠒⠪⠧⣤⣤⣔⣒⣚⡡⠔⠋⠁⢸⠀⠀⠀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡔⠋⠀⠀⡖⣇⠀⠀⠀⠉⡇⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⡃⠀⠀⠀⢸⣆⠀⠀⠈⢻⡢⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⡠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠖⠁⠀⠀⠀⡴⠃⠈⡆⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡆⢣⣀⠀⠀⡼⠀⢣⠀⠀⠀⠈⠢⡈⠁⠑⠒⠤⠤⠄⣀⣀⠀⡤⠋⠁⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠖⠉⠁⠀⠀⠀⠀⡎⠀⠀⠀⡇⠀⠀⠀⠘⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⡠⠚⠁⠀⠀⠀⡷⡀⠀⠀⠀⠈⠑⠢⠤⠤⠤⠄⠤⠄⠊⠁⠀⠀⢀⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⡤⠒⠁⠁⠀⠀⠀⠀⢀⣠⠴⠃⠀⠀⠀⠸⡄⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⡴⠁⠀⠀⠀⠀⠀⡇⠘⢦⡤⠄⡄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡴⠁⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⢶⣋⠁⠀⠀⣀⡠⠤⠖⠋⠉⠁⠀⠀⠀⠀⠀⠀⠀⢧⠀⠀⠀⠀⠙⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⡏⠁⠑⠒⠚⣿⠤⠤⢴⠦⠴⣊⣱⠂⢦⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠱⠭⠝⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⢀⣀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠳⢲⡟⢹⠁⠁⣿⠀⠀⡏⠀⡏⠁⠀⠉⢮⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀===============================================================
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⢀⠂⠁⡟⠒⠊⠀⢀⡟⠀⠀⡇⠀⠙⠒⡄⠀⡍⡆⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠁⠀⠀⠁⡍⠙⡁⠀⡅⠀⠀⡇⠀⠀⠀⡏⢀⡕⠊⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠉⠉⢑⡞⠓⠂⠀⡇⠀⠀⡇⠀⡠⠔⡍⡅⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⡀⡼⠋⠣⡇⠅⠀⡇⠀⠀⡇⠛⠒⠚⠑⡀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡏⣀⢃⠄⠣⢵⠁⠀⡇⠀⠀⡇⠀⠀⠀⠀⠀⡇⠀⠙⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡎⠀⢑⠖⠋⡛⠂⠀⡇⠀⠀⢱⡀⠀⠀⠀⡖⡇⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠸⠤⠂⠁⠀⡰⠃⠀⠀⠀⢧⠀⠀⠓⠚⠀⣠⠞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣇⣀⣀⣀⡔⠋⠀⠀⠀⠀⠀⠈⠣⠤⠖⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀================================================================⠀⠀⠀⠀""")
 
 
 
